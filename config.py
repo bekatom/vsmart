@@ -10,7 +10,7 @@ class ProductionConfig(object):
 class ProductionConfigHome(object):
     DEBUG = True
     TESTING = False
-    MONGODB_SETTINGS = {'HOST': 'mongodb://vobi:v0bi1$@update.vobi.ge:27017/vobismart', 'DB': 'vobismart'}
+    MONGODB_SETTINGS = {'HOST': 'mongodb://vobi:vobi$@update.vobi.ge:27017/vobismart', 'DB': 'vobismart'}
     SECRET_KEY = 'flask+mongoengine=<3'
     DEBUG_TB_INTERCEPT_REDIRECTS = False
     SMTP = ''
