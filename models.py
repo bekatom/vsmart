@@ -17,4 +17,4 @@ class User(db.Document):
 class Project(db.Document):
     name = db.StringField(max_length=100)
     create_date = db.DateTimeField(default=datetime.datetime.now)
-    #user = db.ListField(db.EmbeddedDocumentField(User)) 
+    user = db.ListField(db.ReferenceField(User))

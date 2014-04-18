@@ -3,20 +3,54 @@
 
 {% block body %}
 
-<h2>Starter template</h2>
-<h2>Flask with MongoDB,Sijax & Bootstrap</h2>
-<p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+<h2>Dashboard</h2>
 
-<p> </p>
-<p>
-    Sijax  Samples <br> ======================  <br>
-    <a href="javascript://" onclick="Sijax.request('say_hello', ['Beka', 'Giga']);">
-        Say hello from Beka to Giga!
-    </a>
-    <br />
-    <a href="javascript://" onclick="Sijax.request('say_goodbye');">
-        Say goodbye!
-    </a>
-</p>
+
+<script type="text/javascript">
+        /// TODO
+        $(function() {
+        $('#add-project').bind('click', function() {
+            project_name  = $("#project-name").val();
+        $.ajax({
+            type : "POST",
+            url : "/add-project",
+            data: JSON.stringify(project_name, null, '\t'),
+            contentType: 'application/json;charset=UTF-8',
+            success: function(result) {
+                window.location.href = "/";
+            }
+        });
+
+
+    });
+  });
+
+    </script>
+
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">პროექტის დასახელება</h4>
+      </div>
+      <div class="modal-body">
+
+     <form class="form-signin" role="form" method="post">
+        <input type="text" id="project-name" class="form-control" placeholder="პროექტი" required autofocus>
+     </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">დახურვა</button>
+        <button type="button" id="add-project" class="btn btn-primary">დამატებაა</button>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
 
 {% endblock %}

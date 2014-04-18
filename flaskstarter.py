@@ -12,7 +12,6 @@ app.config['SIJAX_STATIC_PATH'] = path
 app.config['SIJAX_JSON_URI'] = '/static/js/sijax/json2.js'
 
 flask_sijax.Sijax(app)
-
 db = MongoEngine(app)
 
 from views import *
