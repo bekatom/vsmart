@@ -3,13 +3,13 @@
 
 {% block body %}
 
-    {{ project.name }}
+    <ul class="nav nav-pills">
+      <li class="active"><a href="/project/{{ project.id }}">{{ project.name }}</a></li>
+      <li><a href="/tasks/{{ project.id }}">დავალებები</a></li>
+      <li><a href="/newtask/{{ project.id }}"> ახალი დავალება </a></li>
+      <li> <a href="/users/{{ project.id }}">მომხმარებლები</a></li>
+    </ul>
 
-        <div>
-            <a href="/tasks/{{ project.id }}"> <li> დავალებები </li></a>
-            <a href="/newtask/{{ project.id }}"> <li> ახალი დავალება </li></a>
-            <a href="/users/{{ project.id }}"><li> მომხმარებლები </li></a>
-        </div>
 
  {% block project_blocks %}
 {% endblock %}

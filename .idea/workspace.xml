@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edd784d1-7626-4df9-8a4b-32c265d2ecef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/users/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/tasks/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/tasks/new.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/project.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project_view.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/404.html" afterPath="$PROJECT_DIR$/templates/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskstarter.py" afterPath="$PROJECT_DIR$/flaskstarter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.html" afterPath="$PROJECT_DIR$/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models.py" afterPath="$PROJECT_DIR$/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/users/index.html" afterPath="$PROJECT_DIR$/templates/users/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/tasks/new.html" afterPath="$PROJECT_DIR$/templates/tasks/new.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/project.html" afterPath="$PROJECT_DIR$/templates/project.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vsmart.iws" />
@@ -53,16 +45,16 @@
       <file leaf-file-name="registration.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/registration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="52" selection-end="595" vertical-scroll-proportion="-1.3076923" vertical-offset="68" max-vertical-offset="459">
+            <state line="8" column="114" selection-start="270" selection-end="279" vertical-scroll-proportion="-2.6153846" vertical-offset="68" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/users/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="289">
+            <state line="10" column="85" selection-start="396" selection-end="396" vertical-scroll-proportion="0.5105105" vertical-offset="0" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -80,7 +72,7 @@
       <file leaf-file-name="project.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/project.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="1" selection-start="330" selection-end="330" vertical-scroll-proportion="-7.576923" vertical-offset="24" max-vertical-offset="476">
+            <state line="5" column="4" selection-start="52" selection-end="52" vertical-scroll-proportion="-2.3461537" vertical-offset="24" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -115,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/tasks/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="78" selection-start="526" selection-end="526" vertical-scroll-proportion="0.5615616" vertical-offset="0" max-vertical-offset="527">
+            <state line="4" column="0" selection-start="58" selection-end="549" vertical-scroll-proportion="-1.6923077" vertical-offset="24" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -147,9 +139,9 @@
         <option value="$PROJECT_DIR$/project_view.py" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/templates/tasks/list.html" />
-        <option value="$PROJECT_DIR$/templates/users/index.html" />
-        <option value="$PROJECT_DIR$/templates/project.html" />
         <option value="$PROJECT_DIR$/templates/tasks/new.html" />
+        <option value="$PROJECT_DIR$/templates/project.html" />
+        <option value="$PROJECT_DIR$/templates/users/index.html" />
       </list>
     </option>
   </component>
@@ -723,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/users/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="595">
@@ -739,23 +724,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="52" selection-end="595" vertical-scroll-proportion="-1.3076923" vertical-offset="68" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/project.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="330" selection-end="330" vertical-scroll-proportion="-7.576923" vertical-offset="24" max-vertical-offset="476">
+        <state line="5" column="4" selection-start="52" selection-end="52" vertical-scroll-proportion="-2.3461537" vertical-offset="24" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tasks/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="78" selection-start="526" selection-end="526" vertical-scroll-proportion="0.5615616" vertical-offset="0" max-vertical-offset="527">
+        <state line="4" column="0" selection-start="58" selection-end="549" vertical-scroll-proportion="-1.6923077" vertical-offset="24" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="114" selection-start="270" selection-end="279" vertical-scroll-proportion="-2.6153846" vertical-offset="68" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/users/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="85" selection-start="396" selection-end="396" vertical-scroll-proportion="0.5105105" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
