@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+    {{ project.name }}
+
+        <div>
+            <a href="/tasks/{{ project.id }}"> <li> დავალებები </li></a>
+            <a href="/newtask/{{ project.id }}"> <li> ახალი დავალება </li></a>
+            <a href="/users/{{ project.id }}"><li> მომხმარებლები </li></a>
+        </div>
+
+ {% block project_blocks %}
+{% endblock %}
+
+
+
+{% endblock %}
+
+
+

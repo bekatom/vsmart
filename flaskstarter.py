@@ -15,7 +15,7 @@ flask_sijax.Sijax(app)
 db = MongoEngine(app)
 
 from views import *
-
+from project_view import *
 
 if __name__ == '__main__':
     app.run()

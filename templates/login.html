@@ -1,7 +1,5 @@
 ﻿{% extends 'layout.html' %}
 
-
-
    {% block body %}
 
         {% if message %}
@@ -13,13 +11,10 @@
     <input type="email" id="email" name="email" class="form-control" placeholder="ელ-ფოსტა" required autofocus>
     <input type="password" id="password" name="password" class="form-control" placeholder="პაროლი">
     <label class="checkbox">
-        <input type="checkbox" value="remember-me"> save
+        <input type="checkbox" value="remember-me"> დამახსოვრება
     </label>
     <button class="btn btn-lg btn-primary btn-block" type="submit">შესვლა</button>
 </form>
-
-
-
 </div>
 
-   {% endblock %}
+{% endblock %}

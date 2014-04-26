@@ -1,0 +1,25 @@
+{% extends "project.html" %}
+
+{% block project_blocks %}
+
+       <form class="form-signin" role="form" method="post">
+        <h2 class="form-signin-heading">დავალება</h2>
+        <input type="text" id="title" name="title" class="form-control" placeholder="სათაური" required autofocus>
+        <textarea name="description" id="description"></textarea>
+        <input type="date" id="due_date" name="due_date" class="form-control" placeholder="">
+
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">შენახვა</button>
+      </form>
+
+        {% if message %}
+                    {{ message }}
+        {% endif %}
+
+    </div>
+
+
+
+
+
+{% endblock %}
