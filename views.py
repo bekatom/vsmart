@@ -17,7 +17,13 @@ def page_not_found(error):
 @app.route('/', methods=['POST', 'GET'])
 @app.route('/')
 def main():
-    return render_template('index.html')
+    if 'user_id' in session:
+        #get user object from User objects
+        u = User.objects.get(pk = session['user_id'])
+        pro = Project.objects(user =u)
+        return render_template('index.html', pro=pro)
+    else:
+        return render_template('index.html')
 
 
 @app.route('/contact', methods=['POST', 'GET'])
@@ -47,11 +53,13 @@ def login():
             session['is_auth'] = True
             session['email'] = email
             session['user_id'] = str(user.pk)
-            return render_template('index.html', session=session)
+            #return render_template('index.html', session=session)
+            return redirect(url_for('main'))
         else:
             return render_template('login.html', message="Email or password is incorrect, try again")
     else:
         return render_template('login.html')
+
 
 
 @app.route('/registration', methods=['POST', 'GET'])
