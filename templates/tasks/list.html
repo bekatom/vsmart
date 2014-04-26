@@ -2,5 +2,27 @@
 
 {% block project_blocks %}
 
+<table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>სათაური</th>
+          <th>აღწერა</th>
+          <th>შექმნის თარიღი</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {% for t in tasks %}
+            <tr>
+               <td>{{ loop.index }}</td>
+               <td> {{ t.title }}</td>
+               <td> {{ t.description }}</td>
+               <td> {{ t.create_date }}</td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
 
 {% endblock %}
