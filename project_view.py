@@ -10,14 +10,19 @@ import flask_sijax
 @app.route('/project/<project_id>', methods=['POST', 'GET'])
 def project(project_id):
     pro = Project.objects.get(pk=project_id)
-    return render_template('project.html',project=pro)
+    u = User.objects.get(pk = session['user_id'])
+    project_list = Project.objects(user =u)
+    return render_template('project.html',project=pro,pro=project_list)
 
 
 @app.route('/tasks/<project_id>', methods=['POST', 'GET'])
 def tasks_list(project_id):
     pro = Project.objects.get(pk=project_id)
     tasks = Task.objects(project=pro)
-    return render_template('tasks/list.html',project=pro,tasks=tasks)
+    u = User.objects.get(pk = session['user_id'])
+    project_list = Project.objects(user =u)
+
+    return render_template('tasks/list.html',project=pro,tasks=tasks,pro=project_list)
 
 
 @app.route('/newtask/<project_id>', methods=['POST', 'GET'])

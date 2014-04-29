@@ -11,14 +11,10 @@ class User(db.Document):
     email = db.StringField(max_length=100)
     create_date = db.DateTimeField(default=datetime.datetime.now)
     
-
-
-
 class Project(db.Document):
     name = db.StringField(max_length=100)
     create_date = db.DateTimeField(default=datetime.datetime.now)
     user = db.ListField(db.ReferenceField(User))
-
 
 class Task(db.Document):
     title = db.StringField(max_length=300)

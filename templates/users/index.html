@@ -3,15 +3,89 @@
 {% block project_blocks %}
 
     <div>
+
+     <div class="row">
+        <div class="col-lg-3">
+          <form>
+            <input type="text" class="form-control" value="Ordinary text box" />
+          </form>
+        </div>
+        <div class="col-lg-3">
+            <select data-placeholder="Choose a Country" class="chosen-select" multiple tabindex="4">
+              <option value=""></option>
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+              <option value="Taiwan, Republic of China">Taiwan, Republic of China</option>
+              <option value="Tajikistan">Tajikistan</option>
+              <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Timor-leste">Timor-leste</option>
+              <option value="Togo">Togo</option>
+              <option value="Tokelau">Tokelau</option>
+              <option value="Tonga">Tonga</option>
+              <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Turkmenistan">Turkmenistan</option>
+              <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+              <option value="Tuvalu">Tuvalu</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="United States">United States</option>
+              <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Uzbekistan">Uzbekistan</option>
+              <option value="Vanuatu">Vanuatu</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Viet Nam">Viet Nam</option>
+              <option value="Virgin Islands, British">Virgin Islands, British</option>
+              <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+              <option value="Wallis and Futuna">Wallis and Futuna</option>
+              <option value="Western Sahara">Western Sahara</option>
+              <option value="Yemen">Yemen</option>
+              <option value="Zambia">Zambia</option>
+              <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+        </div>
+      </div>
+
+
+
           <form class="form-signin" role="form" method="post">
            <fieldset>
                <legend> მომხმარებლის დამატება</legend>
-                <div class="input-group">
-                    <span class="input-group-addon">@</span>
-                    <input type="text" class="form-control" placeholder="მომხმარებელი" autofocus>
+                <div class="form-group">
+                 <select name="users" class="chzn-select" data-placeholder="მომხარებელი"
+                             multiple style="width:350px;display:none" tabindex="-1">
+                         <option value></option>
+                         <option value="1">1</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                    </select>
+
+                </div>
+
+               <div class="form-group">
+                   <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" name="submit" class="btn btn-default" value="დამატება/მოწვევა">
+                   </div>
                 </div>
            </fieldset>
 
+
+
+ <script type="text/javascript">
+    $(".chzn-select").chosen();
+    $(".chzn-select-deselect").chosen({allow_single_deselect:true});
+
+    $(".chosen-select").chosen();
+    $('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+
+ </script>
           </form>
 
     </div>
